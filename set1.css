@@ -8,8 +8,8 @@
 
 .grid {
     position: relative;
-    margin: 0 auto;
     padding: 1em 0 4em;
+    margin: 0 auto;
     max-width: 1000px;
     list-style: none;
     text-align: center;
@@ -37,7 +37,7 @@
     display: block;
     min-height: 100%;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .grid figure figcaption {
@@ -1224,8 +1224,10 @@ figure.effect-chico:hover p {
 
 @media screen and (max-width: 50em) {
     .content {
+        display: flex;
         padding: 0 10px;
         text-align: center;
+        justify-content: space-around;
     }
     .grid figure {
         display: inline-block;
