@@ -180,14 +180,8 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.text-box {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
 .text-box p {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .text-box h1 {
@@ -197,21 +191,44 @@ html {
 .text-box {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1160px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start
 }
 
-.text-box img {
-    max-width: 35%;
+.left img {
+    width: 58%;
+    max-width: 100%;
+    height: auto;
+}
+
+.paragraph {
+    padding: 30px 30px 30px 9px;
 }
 
 .right img {
     max-width: 100%;
+    height: auto;
+}
+
+.right {
+    margin: 10px;
+    display: flex;
+    background-color: #f7f7f7;
+    max-width: 41%;
+    height: auto;
 }
 
 .left {
     margin: 10px;
     display: flex;
     flex-direction: row;
-    background-color: #fafafa;
+    background-color: #f7f7f7;
+    max-width: 55%;
+    height: auto;
 }
 
 h1,
@@ -255,8 +272,31 @@ p {
 
 .body {
     background-color: #ffffff;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    align-self: flex-end;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    background-color: #f7f7f7;
+    z-index: 2000;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px #f7f7f7;
+    left: 100px;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
 }
 
 @media only screen and (max-width: 767px) {}
