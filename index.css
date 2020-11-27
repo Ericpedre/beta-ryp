@@ -220,6 +220,7 @@ html {
     background-color: #f7f7f7;
     max-width: 41%;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .left {
@@ -229,6 +230,7 @@ html {
     background-color: #f7f7f7;
     max-width: 55%;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1,
@@ -248,6 +250,7 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 .deep p {
@@ -271,7 +274,7 @@ p {
 }
 
 .body {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -297,6 +300,28 @@ p {
 
 .arrow-left {
     transform: rotate(135deg);
+}
+
+.arrow-left-up {
+    align-self: flex-start;
+    transform: rotate(135deg);
+    margin-top: 40px;
+}
+
+.doble-left {
+    max-width: 57%;
+    height: 100%;
+}
+
+.left-in {
+    max-width: 100%;
+}
+
+.division {
+    width: 80%;
+    margin: 10%;
+    height: 2px;
+    background-color: white;
 }
 
 @media only screen and (max-width: 767px) {}
